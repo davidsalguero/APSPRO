@@ -35,4 +35,9 @@ npm run build
 - La navegación usa anclas internas.
 - El formulario es únicamente visual y no transmite datos.
 - No hay backend, base de datos, CMS ni integraciones externas.
-- El proyecto está preparado para despliegue posterior en Vercel, pero no se ha publicado.
+- El mockup está publicado en Vercel: https://apspro.vercel.app
+- GitHub está conectado a Vercel para validar despliegues automáticos desde `main`.
+
+## Verificación de despliegue
+
+Prueba de integración GitHub → Vercel iniciada el 2026-07-14.
