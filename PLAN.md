@@ -191,7 +191,15 @@ Esperar las respuestas de requerimientos. No seleccionar tecnología, comprar se
 
 ### Pendiente
 
-- [ ] Conectar formalmente el proyecto de Vercel con el repositorio GitHub para habilitar despliegues automáticos por cada `push`; el despliegue MCP actual se realizó con los archivos versionados, pero no creó esa integración.
+- [x] Conectar formalmente el proyecto de Vercel con `davidsalguero/APSPRO`; cada `push` a `main` genera ahora un despliegue automático de producción.
 - [ ] Vincular `apspro.net` cuando el dominio haya sido comprado y autorizar expresamente los cambios DNS.
 - [ ] Sustituir datos, productos, certificaciones y contactos demostrativos por información verificada.
 - [ ] Implementar el formulario funcional con procesamiento seguro; el botón actual no transmite datos.
+
+
+### Verificación de integración Git — 2026-07-14
+
+- [x] Publicar commit de prueba `b9c189f` desde GitHub.
+- [x] Confirmar que Vercel clonó automáticamente la rama `main`.
+- [x] Corregir el `package-lock.json` remoto incompleto y verificar que su blob coincide con la copia local.
+- [x] Confirmar build de producción limpio, TypeScript correcto, estado `READY`, HTTPS `200 OK` y ausencia de errores de ejecución.
