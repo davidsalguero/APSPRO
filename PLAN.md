@@ -170,3 +170,28 @@ Los importes definitivos se calcularán tras decidir alcance, país de facturaci
 ## Puerta de aprobación actual
 
 Esperar las respuestas de requerimientos. No seleccionar tecnología, comprar servicios ni comenzar desarrollo hasta consolidarlas y presentar las dos alternativas de arquitectura.
+
+## Registro de publicación — 2026-07-14
+
+### Completado
+
+- [x] Crear el repositorio público `davidsalguero/APSPRO` en GitHub.
+- [x] Publicar el mockup completo en la rama `main` sin secretos, cachés ni dependencias instaladas.
+- [x] Crear el proyecto `apspro` en el equipo `DS desarrollos` de Vercel mediante MCP.
+- [x] Ejecutar el primer despliegue de producción con Next.js 16.2.6.
+- [x] Verificar compilación, TypeScript y generación estática en los registros de Vercel.
+- [x] Verificar respuesta HTTPS `200 OK` y ausencia de errores de ejecución.
+
+### Referencias operativas
+
+- Repositorio: `https://github.com/davidsalguero/APSPRO`
+- URL provisional: `https://apspro.vercel.app`
+- Proyecto Vercel: `prj_dqzJFKlEBPh6Y6yPu7QLSJzLwdfB`
+- Deployment inicial: `dpl_3wvfNyc5S6XxiqNzvtRMdQbaf1yS`
+
+### Pendiente
+
+- [ ] Conectar formalmente el proyecto de Vercel con el repositorio GitHub para habilitar despliegues automáticos por cada `push`; el despliegue MCP actual se realizó con los archivos versionados, pero no creó esa integración.
+- [ ] Vincular `apspro.net` cuando el dominio haya sido comprado y autorizar expresamente los cambios DNS.
+- [ ] Sustituir datos, productos, certificaciones y contactos demostrativos por información verificada.
+- [ ] Implementar el formulario funcional con procesamiento seguro; el botón actual no transmite datos.
