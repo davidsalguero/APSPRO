@@ -5,9 +5,9 @@ import { useState } from "react";
 
 const links = [
   { href: "#productos", label: "Productos" },
+  { href: "#tecnologia-pex", label: "PEX" },
+  { href: "#hdpe", label: "HDPE" },
   { href: "#industrias", label: "Industrias" },
-  { href: "#empresa", label: "Empresa" },
-  { href: "#proyectos", label: "Proyectos" },
 ];
 
 export function SiteHeader() {

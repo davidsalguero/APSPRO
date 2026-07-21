@@ -215,3 +215,17 @@ Esperar las respuestas de requerimientos. No seleccionar tecnología, comprar se
 - [ ] Confirmar las marcas representadas y obtener autorización para publicar sus nombres y logotipos.
 - [ ] Confirmar el portafolio, métodos de unión, medidas, clasificaciones, garantías y certificaciones de cada fabricante.
 - [ ] Validar las referencias normativas y requisitos aplicables en Guatemala antes de convertir el contenido técnico en una especificación contractual.
+
+### Ampliación técnica PEX y HDPE — 2026-07-21
+
+- [x] Incorporar una explicación general de PEX, sus procesos PEX-a, PEX-b y PEX-c y sus propiedades habituales.
+- [x] Agregar una comparación equilibrada entre PEX y PVC convencional, distinguiendo expresamente PVC de CPVC.
+- [x] Incorporar HDPE al portafolio y presentar aplicaciones en agua potable, aguas residuales, minería, industria, agricultura e instalación sin zanja.
+- [x] Explicar la relación dimensional DR/SDR y mostrar referencias generales para DR 9, 11, 13.5 y 17.
+- [x] Agregar un ejemplo controlado de espesor con OD IPS de 4.500 pulgadas: PVC ASTM D2241 SDR 17 de 250 psi frente a HDPE DR 11 y DR 9.
+- [x] Incorporar una comparación de selección entre HDPE y hierro galvanizado, incluyendo ventajas y limitaciones de ambos materiales.
+- [ ] Confirmar que la abreviatura `HG` utilizada por el cliente significa hierro galvanizado.
+- [ ] Sustituir las referencias generales por fichas técnicas de las marcas y productos que APS distribuirá efectivamente.
+- [ ] Confirmar diámetros, resinas, clases de presión, factores de diseño, temperatura y normas para las tablas comerciales definitivas.
+
+Riesgo técnico: una clase de presión no permite comparar por sí sola dos materiales. El ejemplo de espesor solo es válido para el mismo diámetro exterior indicado y no sustituye el diseño hidráulico, estructural ni el submittal del fabricante.
