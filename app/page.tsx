@@ -54,6 +54,7 @@ export default function Home() {
               <Image
                 src="/images/pex-manifold.jpg"
                 fill
+                unoptimized
                 priority
                 sizes="(max-width: 920px) 70vw, 48vw"
                 alt="Sistema moderno de tubería PEX roja y azul conectado a un colector"
@@ -145,6 +146,7 @@ export default function Home() {
               <Image
                 src="/images/pex-installation.jpg"
                 fill
+                unoptimized
                 sizes="(max-width: 920px) 100vw, 55vw"
                 alt="Instalación profesional de tubería PEX roja y azul en un proyecto de construcción"
               />
