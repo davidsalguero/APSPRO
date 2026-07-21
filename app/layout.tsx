@@ -20,9 +20,9 @@ export const metadata: Metadata = {
     type: "website",
   },
   icons: {
-    icon: "/brand/aps-favicon-full.png",
-    shortcut: "/brand/aps-favicon-full.png",
-    apple: "/brand/aps-favicon-full.png",
+    icon: "/brand/aps-favicon-white.png",
+    shortcut: "/brand/aps-favicon-white.png",
+    apple: "/brand/aps-favicon-white.png",
   },
 };
 
