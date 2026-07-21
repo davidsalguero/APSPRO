@@ -231,3 +231,27 @@ Esperar las respuestas de requerimientos. No seleccionar tecnología, comprar se
 - [ ] Confirmar diámetros, resinas, clases de presión, factores de diseño, temperatura y normas para las tablas comerciales definitivas.
 
 Riesgo técnico: una clase de presión no permite comparar por sí sola dos materiales. El ejemplo de espesor solo es válido para el mismo diámetro exterior indicado y no sustituye el diseño hidráulico, estructural ni el submittal del fabricante.
+
+### Reestructuración integral del mockup — 2026-07-21
+
+- [x] Reorganizar el sitio como una experiencia de una sola página con navegación fija y anclas suaves: Inicio, Acerca de, Productos, Servicios, Descargas, Proyectos y Contacto.
+- [x] Crear un hero original con propuesta de valor, llamadas a productos y contacto, e instalación visual PEX/HDPE.
+- [x] Incorporar historia, misión, visión, compromiso de calidad y explicaciones profesionales de PEX y HDPE.
+- [x] Crear un catálogo alimentado por datos con cinco categorías y los productos indicados por el cliente.
+- [x] Incorporar renta de equipo y ensayos de presión como servicios cotizables.
+- [x] Preparar la biblioteca de descargas con estados de disponibilidad futura.
+- [x] Crear la ficha inicial del proyecto Tiffany Doce con campos ampliables.
+- [x] Actualizar contacto con teléfono `6676-6835`, WhatsApp `4387-7424`, formulario visual y mapa pendiente de dirección.
+- [x] Generar cuatro imágenes originales para HDPE contra incendios, sistemas multicapa, pruebas de presión y proyecto de referencia.
+- [x] Optimizar las imágenes nuevas a JPEG y verificar que cargan completas, evitando el fallo de renderizado parcial observado anteriormente.
+- [x] Añadir iconografía SVG, animaciones progresivas con respeto a movimiento reducido, navegación responsive y protección contra desbordamiento horizontal.
+- [x] Añadir metadatos Open Graph/Twitter, datos estructurados de empresa local, `robots.txt` y `sitemap.xml`.
+- [x] Validar lint, TypeScript, compilación estática y respuestas HTTP de la página, imágenes, robots y sitemap.
+
+Pendiente para convertir el mockup en una versión operativa:
+
+- [ ] Confirmar la historia real, dirección, correo comercial, año y alcance del proyecto Tiffany Doce.
+- [ ] Recibir fotografías reales y autorización para publicar proyectos, productos y marcas distribuidas.
+- [ ] Recibir y publicar catálogos, especificaciones, manuales, videos y certificaciones.
+- [ ] Conectar el formulario a un servicio seguro con validación de servidor y protección contra spam.
+- [ ] Revisión final del contenido técnico contra fichas de los fabricantes y normativa aplicable.

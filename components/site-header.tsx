@@ -4,10 +4,13 @@ import Image from "next/image";
 import { useState } from "react";
 
 const links = [
+  { href: "#inicio", label: "Inicio" },
+  { href: "#acerca-de", label: "Acerca de" },
   { href: "#productos", label: "Productos" },
-  { href: "#tecnologia-pex", label: "PEX" },
-  { href: "#hdpe", label: "HDPE" },
-  { href: "#industrias", label: "Industrias" },
+  { href: "#servicios", label: "Servicios" },
+  { href: "#descargas", label: "Descargas" },
+  { href: "#proyectos", label: "Proyectos" },
+  { href: "#contacto", label: "Contacto" },
 ];
 
 export function SiteHeader() {
@@ -17,43 +20,39 @@ export function SiteHeader() {
     <header className="site-header">
       <div className="utility-bar">
         <div className="shell utility-inner">
-          <span>Atención regional · Lun–Vie 8:00–17:00</span>
-          <span className="utility-contact">ventas@apspro.net · +502 0000 0000</span>
+          <span>Soluciones PEX y HDPE en Guatemala</span>
+          <div>
+            <a href="tel:+50266766835">Tel. 6676-6835</a>
+            <a href="https://wa.me/50243877424" target="_blank" rel="noreferrer">WhatsApp 4387-7424</a>
+          </div>
         </div>
       </div>
       <div className="shell nav-wrap">
-        <a className="brand" href="#inicio" aria-label="APS, inicio">
-          <Image
-            className="brand-logo"
-            src="/brand/aps-logo-header.png"
-            width={1200}
-            height={437}
-            alt="APS — Advanced Plumbing Systems"
-            priority
-          />
+        <a className="brand" href="#inicio" aria-label="APS, ir al inicio">
+          <Image className="brand-logo" src="/brand/aps-logo-header.png" width={1200} height={437} alt="APS — Advanced Plumbing Systems" priority />
         </a>
         <button
           className="menu-toggle"
           type="button"
           aria-expanded={open}
           aria-controls="main-navigation"
+          aria-label={open ? "Cerrar menú" : "Abrir menú"}
           onClick={() => setOpen((value) => !value)}
         >
-          <span className="sr-only">Abrir menú</span>
           <i /><i /><i />
         </button>
         <nav id="main-navigation" className={open ? "main-nav is-open" : "main-nav"} aria-label="Navegación principal">
           {links.map((link) => (
             <a key={link.href} href={link.href} onClick={() => setOpen(false)}>{link.label}</a>
           ))}
-          <a className="nav-cta" href="#cotizar" onClick={() => setOpen(false)}>Solicitar cotización <span>↗</span></a>
+          <a className="nav-cta" href="#contacto" onClick={() => setOpen(false)}>Cotizar <span aria-hidden="true">↗</span></a>
         </nav>
       </div>
       <div className="pex-pipe-ribbon" aria-hidden="true">
-        <span className="pex-ribbon-pipe pex-ribbon-blue"><b>PEX · POLIETILENO RETICULADO · APS · PEX · POLIETILENO RETICULADO · APS · PEX · POLIETILENO RETICULADO · APS · PEX · POLIETILENO RETICULADO · APS</b></span>
-        <span className="pex-ribbon-pipe pex-ribbon-white"><b>PEX · POLIETILENO RETICULADO · APS · PEX · POLIETILENO RETICULADO · APS · PEX · POLIETILENO RETICULADO · APS · PEX · POLIETILENO RETICULADO · APS</b></span>
-        <span className="pex-ribbon-pipe pex-ribbon-red"><b>PEX · POLIETILENO RETICULADO · APS · PEX · POLIETILENO RETICULADO · APS · PEX · POLIETILENO RETICULADO · APS · PEX · POLIETILENO RETICULADO · APS</b></span>
-        <span className="pex-ribbon-pipe pex-ribbon-yellow"><b>PEX · POLIETILENO RETICULADO · APS · PEX · POLIETILENO RETICULADO · APS · PEX · POLIETILENO RETICULADO · APS · PEX · POLIETILENO RETICULADO · APS</b></span>
+        <span className="pex-ribbon-pipe pex-ribbon-blue"><b>PEX-A · APS · AGUA FRÍA · PEX-A · APS · AGUA FRÍA · PEX-A · APS · AGUA FRÍA</b></span>
+        <span className="pex-ribbon-pipe pex-ribbon-white"><b>PEX-AL-PEX · APS · MULTICAPA · PEX-AL-PEX · APS · MULTICAPA · PEX-AL-PEX</b></span>
+        <span className="pex-ribbon-pipe pex-ribbon-red"><b>PEX-A · APS · AGUA CALIENTE · PEX-A · APS · AGUA CALIENTE · PEX-A · APS</b></span>
+        <span className="pex-ribbon-pipe pex-ribbon-yellow"><b>PEX-AL-PEX · APS · GAS · PEX-AL-PEX · APS · GAS · PEX-AL-PEX · APS · GAS</b></span>
       </div>
     </header>
   );
