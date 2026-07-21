@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 
 const links = [
@@ -21,9 +22,15 @@ export function SiteHeader() {
         </div>
       </div>
       <div className="shell nav-wrap">
-        <a className="brand" href="#inicio" aria-label="APSPRO, inicio">
-          <span className="brand-mark" aria-hidden="true"><i /><i /><i /></span>
-          <span><strong>APSPRO</strong><small>INDUSTRIAL</small></span>
+        <a className="brand" href="#inicio" aria-label="APS, inicio">
+          <Image
+            className="brand-logo"
+            src="/brand/aps-logo-header.png"
+            width={1200}
+            height={437}
+            alt="APS — Advanced Plumbing Systems"
+            priority
+          />
         </a>
         <button
           className="menu-toggle"

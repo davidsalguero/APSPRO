@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { SiteHeader } from "@/components/site-header";
 import { advantages, categories, industries, products } from "@/data/catalog";
 
@@ -175,12 +176,21 @@ export default function Home() {
       </main>
       <footer className="site-footer">
         <div className="shell footer-main">
-          <div className="footer-brand"><span className="brand-mark" aria-hidden="true"><i /><i /><i /></span><div><strong>APSPRO</strong><small>INDUSTRIAL</small></div><p>Ingeniería, suministro y soporte para sistemas industriales.</p></div>
+          <div className="footer-brand">
+            <Image
+              className="footer-logo"
+              src="/brand/aps-logo-horizontal.png"
+              width={1600}
+              height={305}
+              alt="APS — Advanced Plumbing Systems"
+            />
+            <p>Ingeniería, suministro y soporte para sistemas industriales.</p>
+          </div>
           <div><h3>Soluciones</h3><a href="#productos">Productos</a><a href="#industrias">Industrias</a><a href="#proyectos">Proyectos</a></div>
           <div><h3>Empresa</h3><a href="#empresa">Nosotros</a><a href="#cotizar">Contacto</a><a href="#inicio">Certificaciones</a></div>
           <div><h3>Información</h3><a href="#inicio">Privacidad</a><a href="#inicio">Términos</a><a href="#inicio">Preguntas frecuentes</a></div>
         </div>
-        <div className="shell footer-bottom"><span>© 2026 APSPRO — Contenido de productos y contacto parcialmente ficticio para demostración.</span><a href="#inicio">Volver arriba ↑</a></div>
+        <div className="shell footer-bottom"><span>© 2026 APS — Contenido de productos y contacto parcialmente ficticio para demostración.</span><a href="#inicio">Volver arriba ↑</a></div>
       </footer>
     </>
   );

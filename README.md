@@ -1,6 +1,8 @@
-# APSPRO — mockup inicial
+# APS — mockup inicial
 
-Mockup responsive de `apspro.net`, construido con Next.js y TypeScript. Los productos, métricas, certificaciones, proyectos y datos de contacto aún son demostrativos.
+Mockup responsive de APS en `apspro.net`, construido con Next.js y TypeScript. Los productos, métricas, certificaciones, proyectos y datos de contacto aún son demostrativos.
+
+Sitio publicado: https://apspro.net
 
 ## Ejecutar localmente
 
@@ -29,15 +31,11 @@ npm run build
 - `app/globals.css`: sistema visual y comportamiento responsive.
 - `components/site-header.tsx`: navegación responsive.
 - `data/catalog.ts`: contenido demostrativo separado de la presentación.
+- `public/brand/`: logos oficiales APS preparados para uso web.
 
 ## Estado funcional
 
 - La navegación usa anclas internas.
 - El formulario es únicamente visual y no transmite datos.
 - No hay backend, base de datos, CMS ni integraciones externas.
-- El mockup está publicado en Vercel: https://apspro.vercel.app
-- GitHub está conectado a Vercel para validar despliegues automáticos desde `main`.
-
-## Verificación de despliegue
-
-Prueba de integración GitHub → Vercel iniciada el 2026-07-14.
+- El proyecto está publicado en Vercel y conectado a GitHub para despliegues automáticos desde `main`.

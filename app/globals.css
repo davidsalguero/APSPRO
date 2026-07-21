@@ -26,15 +26,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .utility-inner { min-height: 34px; display: flex; justify-content: space-between; align-items: center; }
 .site-header { position: relative; z-index: 20; background: #fff; }
 .nav-wrap { min-height: 82px; display: flex; align-items: center; justify-content: space-between; }
-.brand, .footer-brand > div { display: flex; align-items: center; gap: 12px; }
-.brand > span:last-child, .footer-brand > div { display: grid; line-height: 1; }
-.brand strong, .footer-brand strong { font-size: 20px; letter-spacing: .08em; }
-.brand small, .footer-brand small { margin-top: 5px; font-size: 8px; letter-spacing: .34em; color: #64747b; }
-.brand-mark { display: flex; align-items: end; gap: 3px; width: 31px; height: 34px; transform: skewY(-18deg); }
-.brand-mark i { display: block; width: 8px; background: var(--cyan); }
-.brand-mark i:nth-child(1) { height: 19px; }
-.brand-mark i:nth-child(2) { height: 27px; }
-.brand-mark i:nth-child(3) { height: 34px; background: var(--orange); }
+.brand { display: inline-flex; align-items: center; }
+.brand-logo { display: block; width: 188px; height: auto; }
 .main-nav { display: flex; align-items: center; gap: 30px; font-size: 13px; font-weight: 700; }
 .main-nav > a:not(.nav-cta) { position: relative; padding-block: 30px; }
 .main-nav > a:not(.nav-cta)::after { content: ""; position: absolute; left: 0; right: 100%; bottom: 22px; height: 2px; background: var(--cyan); transition: right .2s ease; }
@@ -178,8 +171,9 @@ button, a { -webkit-tap-highlight-color: transparent; }
 
 .site-footer { padding-top: 70px; background: #05141d; color: #fff; }
 .footer-main { display: grid; grid-template-columns: 2fr repeat(3, 1fr); gap: 50px; padding-bottom: 60px; }
-.footer-brand { display: grid; grid-template-columns: auto 1fr; align-items: center; max-width: 310px; }
-.footer-brand p { grid-column: 1 / -1; margin: 25px 0 0; color: #7f969f; font-size: 13px; line-height: 1.6; }
+.footer-brand { display: block; max-width: 330px; }
+.footer-logo { display: block; width: min(100%, 310px); height: auto; filter: brightness(0) invert(1); opacity: .92; }
+.footer-brand p { margin: 25px 0 0; color: #7f969f; font-size: 13px; line-height: 1.6; }
 .footer-main h3 { margin: 0 0 22px; color: #6e8791; font-size: 9px; letter-spacing: .18em; text-transform: uppercase; }
 .footer-main > div:not(.footer-brand) { display: flex; flex-direction: column; gap: 12px; }
 .footer-main a { color: #b9c6cb; font-size: 12px; }
@@ -214,6 +208,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .utility-contact { display: none; }
   .utility-inner { justify-content: center; }
   .nav-wrap { min-height: 72px; }.main-nav { top: 106px; }
+  .brand-logo { width: 150px; }
   .hero, .hero-layout { min-height: 700px; }
   .hero h1 { font-size: clamp(42px, 13vw, 60px); }
   .hero-copy { padding: 64px 0 170px; }

@@ -25,14 +25,14 @@ Restricciones actuales:
 - Se aplicará diseño responsive, accesibilidad básica WCAG, SEO técnico, rendimiento y seguridad desde la arquitectura.
 - Se trabajará en entregas pequeñas con aprobación antes de avanzar a la siguiente fase.
 - La tecnología concreta del frontend y la necesidad de CMS permanecen pendientes; por ahora no se contempla una base de datos.
-- El dominio se comprará y administrará en GoDaddy.
-- El nombre de la empresa y marca principal será `APSPRO`.
-- El dominio elegido será `apspro.net`; su compra y configuración siguen pendientes de ejecución manual por el cliente.
+- El dominio `apspro.net` fue comprado y se administra directamente en Vercel.
+- El nombre de la empresa y marca principal será `APS`; `APSPRO` se conserva únicamente en nombres técnicos existentes como el dominio y el repositorio.
+- Vercel administra el DNS, HTTPS y la renovación del dominio `apspro.net`.
 - El frontend se desplegará en Vercel.
 - La primera versión no tendrá backend propio ni base de datos.
 - La tecnología del frontend y el método seguro de procesamiento de formularios todavía deben compararse y aprobarse.
 - Para el mockup se adoptó Next.js con TypeScript, compatible con el despliegue futuro previsto en Vercel.
-- El mockup ya utiliza la marca `APSPRO`; sus productos, métricas, certificaciones, proyectos, teléfono y correo siguen siendo demostrativos hasta recibir datos reales.
+- El mockup ya utiliza la marca `APS` y los logos entregados por el cliente; sus productos, métricas, certificaciones, proyectos, teléfono y correo siguen siendo demostrativos hasta recibir datos reales.
 - El formulario del mockup es visual y no transmite información.
 
 ## Análisis preliminar del sitio de referencia
@@ -152,8 +152,7 @@ Pendientes de la Fase 1:
 Más adelante, ingresados directamente en los proveedores y nunca en el código o en `PLAN.md`:
 
 - Acceso del registrador de dominio y DNS.
-- Acceso a GoDaddy para configurar DNS cuando llegue la fase de publicación.
-- Acceso a Vercel para conectar el repositorio, el dominio y las variables de entorno cuando llegue la fase de despliegue.
+- Acceso a Vercel para administrar el repositorio conectado, el dominio, DNS y las variables de entorno.
 - Acceso del proveedor de hosting y del repositorio Git.
 - Verificación del dominio para correo.
 - Claves/API de formulario, correo transaccional, antispam, analítica o CMS.
@@ -185,21 +184,21 @@ Esperar las respuestas de requerimientos. No seleccionar tecnología, comprar se
 ### Referencias operativas
 
 - Repositorio: `https://github.com/davidsalguero/APSPRO`
-- URL provisional: `https://apspro.vercel.app`
+- URL principal: `https://apspro.net`
 - Proyecto Vercel: `prj_dqzJFKlEBPh6Y6yPu7QLSJzLwdfB`
 - Deployment inicial: `dpl_3wvfNyc5S6XxiqNzvtRMdQbaf1yS`
 
 ### Pendiente
 
-- [x] Conectar formalmente el proyecto de Vercel con `davidsalguero/APSPRO`; cada `push` a `main` genera ahora un despliegue automático de producción.
-- [ ] Vincular `apspro.net` cuando el dominio haya sido comprado y autorizar expresamente los cambios DNS.
+- [x] Conectar formalmente el proyecto de Vercel con el repositorio GitHub para habilitar despliegues automáticos por cada `push` a `main`.
+- [x] Comprar y vincular `apspro.net` desde Vercel, con DNS y HTTPS administrados por la plataforma.
+- [x] Sustituir la marca visible `APSPRO` por `APS` e integrar los logos oficiales preparados para web.
 - [ ] Sustituir datos, productos, certificaciones y contactos demostrativos por información verificada.
 - [ ] Implementar el formulario funcional con procesamiento seguro; el botón actual no transmite datos.
 
+### Actualización de identidad — 2026-07-21
 
-### Verificación de integración Git — 2026-07-14
-
-- [x] Publicar commit de prueba `b9c189f` desde GitHub.
-- [x] Confirmar que Vercel clonó automáticamente la rama `main`.
-- [x] Corregir el `package-lock.json` remoto incompleto y verificar que su blob coincide con la copia local.
-- [x] Confirmar build de producción limpio, TypeScript correcto, estado `READY`, HTTPS `200 OK` y ausencia de errores de ejecución.
+- [x] Confirmar que el nombre comercial es `APS` y que `apspro.net` es únicamente el dominio.
+- [x] Preparar variantes transparentes y optimizadas de los logos oficiales sin alterar su geometría.
+- [x] Integrar el logo en encabezado, pie, favicon y metadatos SEO.
+- [x] Validar lint, TypeScript, build, HTML renderizado y carga de activos.
