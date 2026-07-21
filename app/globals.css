@@ -1,6 +1,3 @@
-Exit code: 0
-Wall time: 10.1 seconds
-Output:
 @import "tailwindcss";
 
 :root {
@@ -261,4 +258,3 @@ button, a { -webkit-tap-highlight-color: transparent; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
 }
-
