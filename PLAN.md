@@ -202,6 +202,7 @@ Esperar las respuestas de requerimientos. No seleccionar tecnología, comprar se
 - [x] Preparar variantes transparentes y optimizadas de los logos oficiales sin alterar su geometría.
 - [x] Integrar el logo en encabezado, pie, favicon y metadatos SEO.
 - [x] Incorporar una franja decorativa de cuatro tuberías bajo la navegación, en azul, blanco, rojo y amarillo.
+- [x] Refinar la franja para simular tubería PEX mediante volumen cilíndrico, uniones y rotulación técnica genérica sin atribuir certificaciones no confirmadas.
 - [x] Mostrar la marca completa `APS` en un favicon cuadrado con fondo blanco, sin deformación y con área de seguridad.
 - [x] Validar lint, TypeScript, build, HTML renderizado y carga de activos.
 

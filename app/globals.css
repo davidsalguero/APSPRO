@@ -25,25 +25,14 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .utility-bar { background: #05131c; color: #b7c6cc; font-size: 11px; letter-spacing: .04em; }
 .utility-inner { min-height: 34px; display: flex; justify-content: space-between; align-items: center; }
 .site-header { position: relative; z-index: 20; background: #fff; }
-.site-header::after {
-  content: "";
-  display: block;
-  height: 14px;
-  background: linear-gradient(
-    to bottom,
-    #72a9d3 0 1px,
-    #2875b2 1px 3px,
-    #174d78 3px 4px,
-    #ffffff 4px 6px,
-    #cbd4d9 6px 7px,
-    #e36c67 7px 8px,
-    #c33135 8px 10px,
-    #f1ce4f 10px 11px,
-    #d9aa1c 11px 13px,
-    #8c6811 13px 14px
-  );
-  box-shadow: 0 3px 8px rgba(7, 24, 35, .18);
-}
+.pex-pipe-ribbon { height: 30px; display: grid; grid-template-rows: repeat(4, 1fr); gap: 1px; padding-block: 1px; overflow: hidden; background: #071823; box-shadow: 0 4px 10px rgba(7, 24, 35, .22); }
+.pex-ribbon-pipe { position: relative; display: flex; align-items: center; min-width: 100%; overflow: hidden; box-shadow: inset 0 1px rgba(255,255,255,.55), inset 0 -2px rgba(0,0,0,.28), 0 1px 2px rgba(0,0,0,.28); }
+.pex-ribbon-pipe::after { content: ""; position: absolute; inset: 0; background: repeating-linear-gradient(90deg, transparent 0 310px, rgba(255,255,255,.65) 310px 311px, rgba(7,24,35,.38) 311px 314px, rgba(255,255,255,.28) 314px 316px, transparent 316px 620px); opacity: .7; }
+.pex-ribbon-pipe b { position: relative; z-index: 1; min-width: max-content; padding-left: 28px; font-size: 4px; line-height: 1; letter-spacing: 1.6px; text-transform: uppercase; opacity: .72; }
+.pex-ribbon-blue { color: rgba(255,255,255,.9); background: linear-gradient(to bottom, #7db9e7 0, #307fbd 34%, #176099 66%, #0c3b61 100%); }
+.pex-ribbon-white { color: rgba(7,24,35,.72); background: linear-gradient(to bottom, #fff 0, #eef2f3 35%, #c8d1d5 72%, #9ba9af 100%); }
+.pex-ribbon-red { color: rgba(255,255,255,.88); background: linear-gradient(to bottom, #f28c87 0, #d84f50 34%, #b9272d 68%, #76151b 100%); }
+.pex-ribbon-yellow { color: rgba(62,43,0,.85); background: linear-gradient(to bottom, #ffe780 0, #f3c735 36%, #d39b16 70%, #8b6107 100%); }
 .nav-wrap { min-height: 82px; display: flex; align-items: center; justify-content: space-between; }
 .brand { display: inline-flex; align-items: center; }
 .brand-logo { display: block; width: 188px; height: auto; }

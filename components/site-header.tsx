@@ -49,6 +49,12 @@ export function SiteHeader() {
           <a className="nav-cta" href="#cotizar" onClick={() => setOpen(false)}>Solicitar cotización <span>↗</span></a>
         </nav>
       </div>
+      <div className="pex-pipe-ribbon" aria-hidden="true">
+        <span className="pex-ribbon-pipe pex-ribbon-blue"><b>PEX · POLIETILENO RETICULADO · APS · PEX · POLIETILENO RETICULADO · APS · PEX · POLIETILENO RETICULADO · APS · PEX · POLIETILENO RETICULADO · APS</b></span>
+        <span className="pex-ribbon-pipe pex-ribbon-white"><b>PEX · POLIETILENO RETICULADO · APS · PEX · POLIETILENO RETICULADO · APS · PEX · POLIETILENO RETICULADO · APS · PEX · POLIETILENO RETICULADO · APS</b></span>
+        <span className="pex-ribbon-pipe pex-ribbon-red"><b>PEX · POLIETILENO RETICULADO · APS · PEX · POLIETILENO RETICULADO · APS · PEX · POLIETILENO RETICULADO · APS · PEX · POLIETILENO RETICULADO · APS</b></span>
+        <span className="pex-ribbon-pipe pex-ribbon-yellow"><b>PEX · POLIETILENO RETICULADO · APS · PEX · POLIETILENO RETICULADO · APS · PEX · POLIETILENO RETICULADO · APS · PEX · POLIETILENO RETICULADO · APS</b></span>
+      </div>
     </header>
   );
 }
