@@ -26,28 +26,27 @@ export default function Home() {
           <div className="hero-grid" aria-hidden="true" />
           <div className="shell hero-layout">
             <div className="hero-copy">
-              <p className="eyebrow"><span /> Ingeniería que mantiene su operación en movimiento</p>
-              <h1>Soluciones industriales para proyectos que no pueden detenerse.</h1>
-              <p className="hero-lead">Integramos productos confiables, soporte técnico y respuesta ágil para convertir una especificación compleja en una solución lista para operar.</p>
+              <p className="eyebrow"><span /> Nuevas tecnologías para Guatemala</p>
+              <h1>Sistemas PEX para construir mejor desde la instalación.</h1>
+              <p className="hero-lead">APS distribuye soluciones de polietileno reticulado de fabricantes con presencia mundial para elevar la calidad de los proyectos, reducir riesgos futuros y optimizar los costos de ejecución.</p>
               <div className="hero-actions">
-                <a className="button button-primary" href="#productos">Explorar soluciones <ArrowIcon /></a>
+                <a className="button button-primary" href="#productos">Conocer soluciones PEX <ArrowIcon /></a>
                 <a className="button button-ghost" href="#cotizar">Hablar con un especialista</a>
               </div>
               <div className="hero-proof">
-                <div><strong>ISO</strong><span>Sistema de calidad<br />de referencia</span></div>
-                <div><strong>24h</strong><span>Respuesta comercial<br />inicial</span></div>
-                <div><strong>LATAM</strong><span>Cobertura regional<br />simulada</span></div>
+                <div><strong>PEX</strong><span>Polietileno<br />reticulado</span></div>
+                <div><strong>GT</strong><span>Distribución<br />en Guatemala</span></div>
+                <div><strong>Global</strong><span>Marcas de alcance<br />internacional</span></div>
               </div>
             </div>
-            <div className="hero-machine" aria-label="Ilustración abstracta de un sistema industrial">
-              <div className="machine-label"><span>NTX</span> SYSTEM / 01</div>
-              <div className="machine-ring ring-back" />
-              <div className="machine-ring ring-main"><i /></div>
-              <div className="machine-bar bar-one" />
-              <div className="machine-bar bar-two" />
-              <div className="machine-dot dot-one" />
-              <div className="machine-dot dot-two" />
-              <div className="machine-note">ENGINEERED FLOW<br /><strong>DN 25—630</strong></div>
+            <div className="hero-machine hero-photo">
+              <Image
+                src="/images/pex-manifold.jpg"
+                fill
+                priority
+                sizes="(max-width: 920px) 70vw, 48vw"
+                alt="Sistema moderno de tubería PEX roja y azul conectado a un colector"
+              />
             </div>
           </div>
           <div className="hero-index"><span>01</span><i /><span>05</span></div>
@@ -56,12 +55,12 @@ export default function Home() {
         <section className="intro-section" id="empresa">
           <div className="shell intro-grid">
             <div>
-              <p className="section-kicker">Qué resolvemos</p>
-              <h2>Menos incertidumbre.<br />Más continuidad operativa.</h2>
+              <p className="section-kicker">Quiénes somos</p>
+              <h2>Tecnología internacional.<br />Respaldo local.</h2>
             </div>
             <div className="intro-copy">
-              <p>Este contenido es demostrativo. La propuesta final combinará selección técnica, documentación clara y acompañamiento comercial para que cada cliente encuentre la solución correcta con menos fricción.</p>
-              <a className="text-link" href="#cotizar">Conocer nuestro enfoque <ArrowIcon /></a>
+              <p>Desde Guatemala, APS se especializa en acercar nuevas tecnologías para instalaciones hidráulicas. Distribuimos sistemas de marcas con presencia mundial y acompañamos a desarrolladores, diseñadores e instaladores para seleccionar soluciones que aporten valor durante la obra y a lo largo de la vida útil del proyecto.</p>
+              <a className="text-link" href="#proyectos">Conocer la tecnología PEX <ArrowIcon /></a>
             </div>
           </div>
         </section>
@@ -69,8 +68,8 @@ export default function Home() {
         <section className="categories-section" id="productos">
           <div className="shell">
             <div className="section-heading-row">
-              <div><p className="section-kicker light">Portafolio</p><h2>Categorías principales</h2></div>
-              <p>Una estructura preparada para crecer desde un catálogo compacto hasta un portafolio técnico completo.</p>
+              <div><p className="section-kicker light">Portafolio PEX</p><h2>Un sistema, no solo una tubería.</h2></div>
+              <p>Tubería, conexiones, herramientas y distribución deben especificarse como un conjunto compatible para obtener un resultado confiable.</p>
             </div>
             <div className="category-grid">
               {categories.map((category, index) => (
@@ -87,7 +86,7 @@ export default function Home() {
         <section className="products-section" id="destacados">
           <div className="shell">
             <div className="section-heading-row dark-text">
-              <div><p className="section-kicker">Selección inicial</p><h2>Productos destacados</h2></div>
+              <div><p className="section-kicker">Selección inicial</p><h2>Componentes del sistema</h2></div>
               <a className="text-link" href="#productos">Ver todo el catálogo <ArrowIcon /></a>
             </div>
             <div className="product-grid">
@@ -110,8 +109,8 @@ export default function Home() {
           <div className="shell industries-layout">
             <div className="industries-title">
               <p className="section-kicker light">Aplicaciones</p>
-              <h2>Experiencia donde la exigencia es parte del trabajo.</h2>
-              <p>Organizamos las soluciones según el contexto real de cada industria, no solamente por nombre de producto.</p>
+              <h2>Una tecnología adaptable a proyectos modernos.</h2>
+              <p>PEX puede emplearse en redes de agua fría y caliente de proyectos residenciales, multifamiliares y comerciales, siempre de acuerdo con la aprobación y especificaciones del fabricante.</p>
             </div>
             <div className="industry-list">
               {industries.map((industry) => (
@@ -131,35 +130,43 @@ export default function Home() {
 
         <section className="project-section" id="proyectos">
           <div className="shell project-layout">
-            <div className="project-visual" aria-hidden="true">
-              <div className="project-grid-lines" />
-              <div className="project-tank tank-one" /><div className="project-tank tank-two" />
-              <div className="project-pipe" /><span>CASE / 001</span>
+            <div className="project-visual pex-installation">
+              <Image
+                src="/images/pex-installation.jpg"
+                fill
+                sizes="(max-width: 920px) 100vw, 55vw"
+                alt="Instalación profesional de tubería PEX roja y azul en un proyecto de construcción"
+              />
             </div>
             <div className="project-copy">
-              <p className="section-kicker">Proyecto destacado · Demo</p>
-              <h2>Modernización de una red de proceso en Centroamérica.</h2>
-              <p>Ejemplo de cómo presentaríamos el reto, la solución suministrada, las normas aplicadas y los resultados verificables de un caso real.</p>
-              <dl><div><dt>Sector</dt><dd>Manufactura</dd></div><div><dt>Alcance</dt><dd>Diseño + suministro</dd></div><div><dt>Resultado</dt><dd>Dato por validar</dd></div></dl>
-              <a className="button button-dark" href="#cotizar">Ver caso de éxito <ArrowIcon /></a>
+              <p className="section-kicker">Tecnología PEX</p>
+              <h2>¿Qué es el polietileno reticulado?</h2>
+              <p>PEX es un polietileno cuya estructura molecular ha sido reticulada para mejorar propiedades como el desempeño a temperatura elevada, la flexibilidad, la resistencia química y la resistencia al crecimiento lento de grietas.</p>
+              <dl>
+                <div><dt>Instalación</dt><dd>Flexible, ligera y sin llama abierta</dd></div>
+                <div><dt>Desempeño</dt><dd>Resistente a corrosión y depósitos</dd></div>
+                <div><dt>Proyecto</dt><dd>Menos uniones y ejecución más eficiente</dd></div>
+              </dl>
+              <p className="technical-note">La aplicación, presión, temperatura, método de unión y compatibilidad de cada sistema deben verificarse con la documentación del fabricante y la normativa aplicable.</p>
+              <a className="button button-dark" href="#cotizar">Evaluar mi proyecto <ArrowIcon /></a>
             </div>
           </div>
         </section>
 
         <section className="certifications-section">
           <div className="shell certifications-wrap">
-            <p>Referencias normativas demostrativas</p>
-            <div className="certification-list"><span>ISO 9001</span><span>ASTM</span><span>ASME</span><span>NSF</span><span>CE</span></div>
-            <small>Las certificaciones definitivas solo se publicarán después de verificar su documentación.</small>
+            <p>Referencias técnicas frecuentes en sistemas PEX</p>
+            <div className="certification-list"><span>ASTM F876</span><span>ASTM F877</span><span>NSF 61</span><span>AWWA C904</span></div>
+            <small>La conformidad y certificación definitiva dependerán de cada producto, fabricante y aplicación.</small>
           </div>
         </section>
 
         <section className="quote-section" id="cotizar">
           <div className="shell quote-layout">
             <div className="quote-copy">
-              <p className="section-kicker light">Inicie su proyecto</p>
-              <h2>Cuéntenos qué necesita mover, controlar o transformar.</h2>
-              <p>Formulario de demostración. En la versión funcional añadiremos validación segura, antispam y notificaciones sin exponer credenciales.</p>
+              <p className="section-kicker light">Construya con una mejor solución</p>
+              <h2>Cuéntenos qué necesita su instalación hidráulica.</h2>
+              <p>Comparta el tipo de proyecto, aplicación y etapa de obra. APS podrá orientarle sobre el sistema PEX adecuado cuando el portafolio definitivo esté confirmado.</p>
               <div className="direct-contact"><span>Contacto directo</span><a href="mailto:ventas@apspro.net">ventas@apspro.net</a><a href="tel:+50200000000">+502 0000 0000</a></div>
             </div>
             <form className="quote-form" action="#" aria-label="Formulario de cotización demostrativo">
@@ -184,13 +191,13 @@ export default function Home() {
               height={305}
               alt="APS — Advanced Plumbing Systems"
             />
-            <p>Ingeniería, suministro y soporte para sistemas industriales.</p>
+            <p>Distribución de tecnologías PEX para proyectos modernos en Guatemala.</p>
           </div>
           <div><h3>Soluciones</h3><a href="#productos">Productos</a><a href="#industrias">Industrias</a><a href="#proyectos">Proyectos</a></div>
           <div><h3>Empresa</h3><a href="#empresa">Nosotros</a><a href="#cotizar">Contacto</a><a href="#inicio">Certificaciones</a></div>
           <div><h3>Información</h3><a href="#inicio">Privacidad</a><a href="#inicio">Términos</a><a href="#inicio">Preguntas frecuentes</a></div>
         </div>
-        <div className="shell footer-bottom"><span>© 2026 APS — Contenido de productos y contacto parcialmente ficticio para demostración.</span><a href="#inicio">Volver arriba ↑</a></div>
+        <div className="shell footer-bottom"><span>© 2026 APS — Portafolio, marcas y datos de contacto pendientes de confirmación.</span><a href="#inicio">Volver arriba ↑</a></div>
       </footer>
     </>
   );

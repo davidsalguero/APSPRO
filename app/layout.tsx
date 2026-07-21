@@ -3,17 +3,17 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://apspro.net"),
-  title: "APS | Soluciones para proyectos exigentes",
+  title: "APS | Sistemas PEX en Guatemala",
   description:
-    "Mockup demostrativo de un sitio corporativo para productos y soluciones industriales.",
+    "Distribución de tubería, conexiones y sistemas PEX de tecnología internacional para proyectos modernos en Guatemala.",
   applicationName: "APS",
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "APS | Soluciones para proyectos exigentes",
+    title: "APS | Sistemas PEX en Guatemala",
     description:
-      "Productos, soporte técnico y soluciones para sistemas industriales.",
+      "Tecnología PEX para mejorar la calidad, confiabilidad y eficiencia de ejecución de proyectos en Guatemala.",
     url: "https://apspro.net",
     siteName: "APS",
     locale: "es_GT",

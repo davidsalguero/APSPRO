@@ -77,6 +77,9 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .hero-proof strong { font-size: 17px; color: #fff; }
 .hero-proof span { color: #90a6b0; font-size: 10px; line-height: 1.5; text-transform: uppercase; letter-spacing: .08em; }
 .hero-machine { position: relative; height: 530px; transform: translateX(45px); }
+.hero-photo { overflow: hidden; border: 1px solid rgba(157,233,235,.16); box-shadow: 0 32px 70px rgba(0,0,0,.35); }
+.hero-photo::after { content: ""; position: absolute; inset: 0; z-index: 1; background: linear-gradient(90deg, rgba(6,23,34,.5), transparent 42%), linear-gradient(0deg, rgba(6,23,34,.28), transparent 55%); pointer-events: none; }
+.hero-photo img { object-fit: cover; }
 .machine-ring { position: absolute; border-radius: 50%; border: 30px solid #1b5b70; box-shadow: inset 0 0 0 7px #071a24, 0 30px 80px rgba(0,0,0,.36); }
 .ring-main { width: 295px; height: 295px; top: 105px; right: 80px; background: radial-gradient(circle, #06141d 0 36%, #2a6f82 37% 42%, #0b2735 43%); border-color: #17485c; }
 .ring-main i { position: absolute; inset: 38px; border: 3px dashed rgba(157,233,235,.3); border-radius: 50%; }
@@ -154,12 +157,14 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .project-section { padding: 120px 0; background: #f0f1ed; }
 .project-layout { display: grid; grid-template-columns: 1.1fr .9fr; gap: 75px; align-items: center; }
 .project-visual { position: relative; min-height: 475px; overflow: hidden; background: linear-gradient(150deg, #174759, #071b27); }
+.pex-installation img { object-fit: cover; }
 .project-grid-lines { opacity: .2; mask-image: none; }
 .project-tank { position: absolute; bottom: 70px; width: 170px; height: 260px; border-radius: 85px 85px 20px 20px; border: 15px solid #537985; background: linear-gradient(90deg, #173b48, #77909a 48%, #183946); box-shadow: 0 25px 50px rgba(0,0,0,.3); }
 .tank-one { left: 70px; }.tank-two { left: 255px; height: 205px; width: 135px; opacity: .75; }
 .project-pipe { position: absolute; width: 480px; height: 40px; left: 45px; bottom: 55px; background: #284f5c; transform: rotate(-4deg); }
 .project-visual > span { position: absolute; top: 22px; left: 24px; color: #83a2ad; font-size: 9px; letter-spacing: .18em; }
 .project-copy > p:nth-of-type(2) { color: var(--muted); line-height: 1.75; }
+.project-copy .technical-note { margin: -8px 0 28px; color: #718087; font-size: 11px; line-height: 1.65; }
 .project-copy dl { margin: 30px 0; border-top: 1px solid #cdd4d5; }
 .project-copy dl div { display: flex; justify-content: space-between; gap: 20px; padding: 13px 0; border-bottom: 1px solid #cdd4d5; font-size: 12px; }
 .project-copy dt { color: var(--muted); }.project-copy dd { margin: 0; font-weight: 800; }

@@ -9,62 +9,62 @@ export type Product = {
 
 export const categories = [
   {
-    name: "Conducción industrial",
-    description: "Sistemas para agua, químicos y procesos de alta exigencia.",
-    count: "12 soluciones",
-    code: "CI",
+    name: "Tubería PEX",
+    description: "Soluciones flexibles para distribución de agua fría y caliente.",
+    count: "Portafolio en definición",
+    code: "PX",
   },
   {
-    name: "Control de flujo",
-    description: "Válvulas, actuadores y accesorios para operación precisa.",
-    count: "18 soluciones",
-    code: "CF",
+    name: "Conexiones y accesorios",
+    description: "Sistemas de unión compatibles para instalaciones seguras y repetibles.",
+    count: "Portafolio en definición",
+    code: "CA",
   },
   {
-    name: "Equipos de proceso",
-    description: "Componentes modulares para integración y mantenimiento.",
-    count: "9 soluciones",
-    code: "EP",
+    name: "Colectores y distribución",
+    description: "Control por circuitos para ordenar la instalación y facilitar el mantenimiento.",
+    count: "Portafolio en definición",
+    code: "CD",
   },
 ];
 
 export const products: Product[] = [
   {
-    slug: "tuberia-ntx-100",
-    name: "Sistema de tubería NTX-100",
-    category: "Conducción industrial",
-    summary: "Línea modular de conducción para redes de proceso y distribución.",
-    spec: "DN 25–630 · PN 10–25",
+    slug: "tuberia-pex",
+    name: "Tubería PEX",
+    category: "Conducción de agua",
+    summary: "Tubería flexible para redes modernas de agua fría y caliente.",
+    spec: "Medidas y clasificación según fabricante",
     accent: "cyan",
   },
   {
-    slug: "valvula-vx-40",
-    name: "Válvula de control VX-40",
-    category: "Control de flujo",
-    summary: "Control estable y mantenimiento simplificado para operación continua.",
-    spec: "2”–12” · Clase 150",
+    slug: "conexiones-pex",
+    name: "Conexiones para PEX",
+    category: "Unión e instalación",
+    summary: "Accesorios diseñados para conexiones confiables y una ejecución ordenada.",
+    spec: "Compatibilidad por sistema y fabricante",
     accent: "amber",
   },
   {
-    slug: "colector-mx-8",
-    name: "Colector modular MX-8",
-    category: "Equipos de proceso",
-    summary: "Distribución compacta con configuraciones adaptables a cada proyecto.",
-    spec: "4–16 salidas · Acero 316L",
+    slug: "colectores-pex",
+    name: "Colectores de distribución",
+    category: "Control por circuitos",
+    summary: "Distribución centralizada para organizar consumos y facilitar intervenciones.",
+    spec: "Configuración según proyecto",
     accent: "slate",
   },
 ];
 
 export const industries = [
-  { name: "Agua e infraestructura", number: "01", text: "Redes de distribución, bombeo y tratamiento." },
-  { name: "Minería", number: "02", text: "Transporte de fluidos abrasivos y servicios auxiliares." },
-  { name: "Alimentos y bebidas", number: "03", text: "Componentes sanitarios para líneas de proceso." },
-  { name: "Manufactura", number: "04", text: "Integración confiable para plantas y servicios industriales." },
+  { name: "Vivienda", number: "01", text: "Redes de agua fría y caliente con recorridos flexibles y organizados." },
+  { name: "Edificios multifamiliares", number: "02", text: "Distribución eficiente por unidades, ramales o colectores." },
+  { name: "Hoteles y comercio", number: "03", text: "Soluciones para proyectos que valoran rapidez, orden y mantenibilidad." },
+  { name: "Proyectos institucionales", number: "04", text: "Alternativas para especificaciones técnicas de mayor escala." },
 ];
 
 export const advantages = [
-  { metric: "24 h", label: "respuesta inicial a solicitudes" },
-  { metric: "100%", label: "trazabilidad documental" },
-  { metric: "+15", label: "años de experiencia simulada" },
-  { metric: "6", label: "mercados regionales atendidos" },
+  { metric: "Flexible", label: "menos cambios de dirección y uniones potenciales" },
+  { metric: "Ligero", label: "transporte y manipulación simplificados en obra" },
+  { metric: "Sin llama", label: "métodos de unión sin soldadura abierta" },
+  { metric: "Durable", label: "resistencia a corrosión y depósitos internos" },
 ];

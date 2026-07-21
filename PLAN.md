@@ -204,3 +204,14 @@ Esperar las respuestas de requerimientos. No seleccionar tecnología, comprar se
 - [x] Incorporar una franja decorativa de cuatro tuberías bajo la navegación, en azul, blanco, rojo y amarillo.
 - [x] Mostrar la marca completa `APS` en un favicon cuadrado con fondo blanco, sin deformación y con área de seguridad.
 - [x] Validar lint, TypeScript, build, HTML renderizado y carga de activos.
+
+### Enfoque comercial PEX — 2026-07-21
+
+- [x] Definir a APS como distribuidor de tecnologías PEX con operación en Guatemala.
+- [x] Reorientar el contenido hacia tubería, conexiones y colectores de polietileno reticulado.
+- [x] Incorporar información técnica general basada en documentación del Plastics Pipe Institute.
+- [x] Generar e integrar dos imágenes originales de referencia sobre sistemas e instalación PEX.
+- [x] Actualizar los metadatos SEO para búsquedas relacionadas con sistemas PEX en Guatemala.
+- [ ] Confirmar las marcas representadas y obtener autorización para publicar sus nombres y logotipos.
+- [ ] Confirmar el portafolio, métodos de unión, medidas, clasificaciones, garantías y certificaciones de cada fabricante.
+- [ ] Validar las referencias normativas y requisitos aplicables en Guatemala antes de convertir el contenido técnico en una especificación contractual.
