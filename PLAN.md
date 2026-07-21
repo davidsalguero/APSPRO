@@ -211,6 +211,7 @@ Esperar las respuestas de requerimientos. No seleccionar tecnología, comprar se
 - [x] Reorientar el contenido hacia tubería, conexiones y colectores de polietileno reticulado.
 - [x] Incorporar información técnica general basada en documentación del Plastics Pipe Institute.
 - [x] Generar e integrar dos imágenes originales de referencia sobre sistemas e instalación PEX.
+- [x] Corregir la visualización parcial de las fotografías en Vercel, sirviéndolas directamente para evitar la transformación defectuosa del optimizador.
 - [x] Actualizar los metadatos SEO para búsquedas relacionadas con sistemas PEX en Guatemala.
 - [ ] Confirmar las marcas representadas y obtener autorización para publicar sus nombres y logotipos.
 - [ ] Confirmar el portafolio, métodos de unión, medidas, clasificaciones, garantías y certificaciones de cada fabricante.
