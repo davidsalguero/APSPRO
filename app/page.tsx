@@ -268,7 +268,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="certifications-section">
+        <section className="certifications-section" id="certificaciones">
           <div className="shell certifications-wrap">
             <p>Referencias técnicas frecuentes en sistemas PEX y HDPE</p>
             <div className="certification-list"><span>ASTM F876</span><span>ASTM F877</span><span>ASTM D3035</span><span>ASTM F2620</span><span>AWWA C906</span><span>NSF 61</span></div>
@@ -308,8 +308,8 @@ export default function Home() {
             />
             <p>Distribución de tecnologías PEX y HDPE para proyectos modernos en Guatemala.</p>
           </div>
-          <div><h3>Soluciones</h3><a href="#productos">Productos</a><a href="#industrias">Industrias</a><a href="#proyectos">Proyectos</a></div>
-          <div><h3>Empresa</h3><a href="#empresa">Nosotros</a><a href="#cotizar">Contacto</a><a href="#inicio">Certificaciones</a></div>
+          <div><h3>Soluciones</h3><a href="#productos">Productos</a><a href="#industrias">Industrias</a><a href="#tecnologia-pex">Tecnología PEX</a></div>
+          <div><h3>Empresa</h3><a href="#empresa">Nosotros</a><a href="#cotizar">Contacto</a><a href="#certificaciones">Certificaciones</a></div>
           <div><h3>Información</h3><a href="#inicio">Privacidad</a><a href="#inicio">Términos</a><a href="#inicio">Preguntas frecuentes</a></div>
         </div>
         <div className="shell footer-bottom"><span>© 2026 APS — Portafolio, marcas y datos de contacto pendientes de confirmación.</span><a href="#inicio">Volver arriba ↑</a></div>
