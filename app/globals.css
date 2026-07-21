@@ -1,3 +1,6 @@
+Exit code: 0
+Wall time: 10.1 seconds
+Output:
 @import "tailwindcss";
 
 :root {
@@ -25,6 +28,25 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .utility-bar { background: #05131c; color: #b7c6cc; font-size: 11px; letter-spacing: .04em; }
 .utility-inner { min-height: 34px; display: flex; justify-content: space-between; align-items: center; }
 .site-header { position: relative; z-index: 20; background: #fff; }
+.site-header::after {
+  content: "";
+  display: block;
+  height: 14px;
+  background: linear-gradient(
+    to bottom,
+    #72a9d3 0 1px,
+    #2875b2 1px 3px,
+    #174d78 3px 4px,
+    #ffffff 4px 6px,
+    #cbd4d9 6px 7px,
+    #e36c67 7px 8px,
+    #c33135 8px 10px,
+    #f1ce4f 10px 11px,
+    #d9aa1c 11px 13px,
+    #8c6811 13px 14px
+  );
+  box-shadow: 0 3px 8px rgba(7, 24, 35, .18);
+}
 .nav-wrap { min-height: 82px; display: flex; align-items: center; justify-content: space-between; }
 .brand { display: inline-flex; align-items: center; }
 .brand-logo { display: block; width: 188px; height: auto; }
@@ -184,7 +206,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 @media (max-width: 920px) {
   .shell { width: min(100% - 36px, 740px); }
   .menu-toggle { display: block; }
-  .main-nav { display: none; position: absolute; left: 0; right: 0; top: 116px; padding: 22px; background: #fff; border-top: 1px solid #e0e5e6; box-shadow: 0 20px 30px rgba(7,24,35,.15); flex-direction: column; align-items: stretch; gap: 0; }
+  .main-nav { display: none; position: absolute; left: 0; right: 0; top: 130px; padding: 22px; background: #fff; border-top: 1px solid #e0e5e6; box-shadow: 0 20px 30px rgba(7,24,35,.15); flex-direction: column; align-items: stretch; gap: 0; }
   .main-nav.is-open { display: flex; }
   .main-nav > a:not(.nav-cta) { padding: 15px 4px; border-bottom: 1px solid #e8ecec; }
   .main-nav > a:not(.nav-cta)::after { display: none; }
@@ -207,7 +229,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .shell { width: min(100% - 28px, 540px); }
   .utility-contact { display: none; }
   .utility-inner { justify-content: center; }
-  .nav-wrap { min-height: 72px; }.main-nav { top: 106px; }
+  .nav-wrap { min-height: 72px; }.main-nav { top: 120px; }
   .brand-logo { width: 150px; }
   .hero, .hero-layout { min-height: 700px; }
   .hero h1 { font-size: clamp(42px, 13vw, 60px); }
@@ -239,3 +261,4 @@ button, a { -webkit-tap-highlight-color: transparent; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
 }
+
