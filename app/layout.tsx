@@ -19,13 +19,13 @@ export const metadata: Metadata = {
     siteName: "APS",
     locale: "es_GT",
     type: "website",
-    images: [{ url: "/images/tiffany-doce.jpg", width: 1536, height: 1024, alt: "Instalación moderna de sistemas PEX y HDPE" }],
+    images: [{ url: "/images/hero-installation.jpg", width: 1536, height: 1024, alt: "Instalación moderna de sistemas PEX y HDPE" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "APS Guatemala | Sistemas PEX y HDPE",
     description: "Soluciones modernas para instalaciones hidráulicas, gas, climatización y protección contra incendios.",
-    images: ["/images/tiffany-doce.jpg"],
+    images: ["/images/hero-installation.jpg"],
   },
   icons: {
     icon: "/brand/aps-favicon-white.png",

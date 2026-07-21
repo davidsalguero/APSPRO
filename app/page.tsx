@@ -13,6 +13,9 @@ import {
 } from "@/data/catalog";
 
 const whatsappUrl = "https://wa.me/50243877424?text=Hola%20APS%2C%20deseo%20informaci%C3%B3n%20sobre%20sus%20soluciones.";
+const mapCoordinates = "14.526393276487424,-90.44783433385601";
+const googleMapsUrl = `https://www.google.com/maps?q=${mapCoordinates}`;
+const googleMapsEmbedUrl = `${googleMapsUrl}&z=16&output=embed`;
 
 function SectionHeading({ eyebrow, title, intro, light = false }: { eyebrow: string; title: string; intro?: string; light?: boolean }) {
   return (
@@ -31,6 +34,12 @@ export default function Home() {
     url: "https://apspro.net",
     telephone: "+50266766835",
     areaServed: "Guatemala",
+    hasMap: googleMapsUrl,
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: 14.526393276487424,
+      longitude: -90.44783433385601,
+    },
     description: "Distribuidor de sistemas PEX, HDPE y tecnologías para instalaciones hidráulicas en Guatemala.",
   };
 
@@ -39,7 +48,7 @@ export default function Home() {
       <SiteHeader />
       <main>
         <section className="hero" id="inicio">
-          <Image className="hero-image" src="/images/tiffany-doce.jpg" fill priority sizes="100vw" alt="Instalación moderna de tuberías PEX y HDPE en un edificio en construcción" />
+          <Image className="hero-image" src="/images/hero-installation.jpg" fill priority sizes="100vw" alt="Instalación moderna de tuberías PEX y HDPE en un edificio en construcción" />
           <div className="hero-overlay" />
           <div className="shell hero-content">
             <p className="hero-kicker">Advanced Plumbing Systems · Guatemala</p>
@@ -109,7 +118,7 @@ export default function Home() {
 
             <div className="technology-block technology-reverse reveal" id="tecnologia-hdpe">
               <div className="technology-photo">
-                <Image src="/images/hdpe-fire-protection.jpg" fill sizes="(max-width: 900px) 100vw, 48vw" alt="Red HDPE instalada con válvulas para protección contra incendios" />
+                <Image src="/images/hdpe-installation-network.jpg" fill sizes="(max-width: 900px) 100vw, 48vw" alt="Red de múltiples tuberías HDPE instalada en una planta hidráulica moderna" />
               </div>
               <div className="technology-copy">
                 <p className="eyebrow">Tecnología HDPE</p>
@@ -151,9 +160,12 @@ export default function Home() {
             </div>
             <div className="service-cards">
               {services.map((service, index) => (
-                <article className="reveal" key={service.name}>
-                  <div><span>{service.number}</span><SiteIcon name={index === 0 ? "tool" : "gauge"} size={34} /></div>
-                  <h3>{service.name}</h3><p>{service.text}</p>
+                <article className={`service-card service-card-${index + 1} reveal`} key={service.name}>
+                  <div className="service-card-image"><Image src={service.image} fill sizes="(max-width: 760px) 100vw, 34vw" alt={service.alt} /></div>
+                  <div className="service-card-top">
+                    <span className="service-icon"><SiteIcon name={index === 0 ? "tool" : "gauge"} size={36} /></span>
+                  </div>
+                  <div className="service-card-copy"><h3>{service.name}</h3><p>{service.text}</p></div>
                 </article>
               ))}
             </div>
@@ -177,11 +189,11 @@ export default function Home() {
 
         <section className="projects-section section-pad" id="proyectos">
           <div className="shell">
-            <SectionHeading light eyebrow="Proyectos de referencia" title="Sistemas aplicados en obra." intro="Una galería preparada para crecer con fotografías, productos, ubicación y año de cada proyecto." />
+            <SectionHeading light eyebrow="Proyectos de referencia" title="Sistemas aplicados en obra." />
             <div className="project-grid">
               {projects.map((project) => (
                 <article className="project-card reveal" key={project.slug}>
-                  <div className="project-image"><Image src={project.image} fill sizes="(max-width: 800px) 100vw, 60vw" alt={project.alt} /></div>
+                  <div className="project-image"><Image src={project.image} fill unoptimized sizes="(max-width: 800px) 100vw, 40vw" alt={project.alt} /></div>
                   <div className="project-info">
                     <p className="eyebrow">Proyecto 01</p><h3>{project.name}</h3><p>{project.description}</p>
                     <dl><div><dt>Ubicación</dt><dd>{project.location}</dd></div><div><dt>Año</dt><dd>{project.year}</dd></div><div><dt>Productos</dt><dd>{project.products.join(" · ")}</dd></div></dl>
@@ -198,21 +210,34 @@ export default function Home() {
 
         <section className="contact-section section-pad" id="contacto">
           <div className="shell">
-            <SectionHeading eyebrow="Contacto" title="Conversemos sobre su proyecto." intro="Comparta sus datos y la necesidad principal. En esta versión inicial, el formulario está preparado visualmente y el envío se habilitará al conectar un servicio seguro." />
+            <SectionHeading eyebrow="Contacto" title="Conversemos sobre su proyecto." />
             <div className="contact-grid">
               <form className="contact-form" action="#" aria-label="Formulario de contacto">
                 <div className="form-row"><label>Nombre<input name="name" type="text" autoComplete="name" required /></label><label>Empresa<input name="company" type="text" autoComplete="organization" /></label></div>
                 <div className="form-row"><label>Correo<input name="email" type="email" autoComplete="email" required /></label><label>Teléfono<input name="phone" type="tel" autoComplete="tel" required /></label></div>
                 <label>Mensaje<textarea name="message" rows={6} required placeholder="Cuéntenos sobre la aplicación, cantidades o etapa del proyecto." /></label>
                 <button className="button button-dark" type="button">Enviar consulta <SiteIcon name="arrow" /></button>
-                <small>Mockup inicial: el formulario todavía no transmite información.</small>
               </form>
               <aside className="contact-aside">
                 <div className="contact-actions">
                   <a href="tel:+50266766835"><SiteIcon name="phone" /><span><small>Llamar</small>6676-6835</span></a>
                   <a href={whatsappUrl} target="_blank" rel="noreferrer"><SiteIcon name="whatsapp" /><span><small>WhatsApp</small>4387-7424</span></a>
                 </div>
-                <div className="map-placeholder"><SiteIcon name="location" size={42} /><h3>Ubicación en Guatemala</h3><p>Espacio preparado para agregar la dirección y el mapa cuando los datos estén confirmados.</p></div>
+                <div className="location-map">
+                  <iframe
+                    className="location-map-frame"
+                    src={googleMapsEmbedUrl}
+                    title="Ubicación de APS en Guatemala"
+                    loading="lazy"
+                    allowFullScreen
+                    referrerPolicy="no-referrer-when-downgrade"
+                  />
+                  <div className="location-map-details">
+                    <span className="location-map-icon"><SiteIcon name="location" size={24} /></span>
+                    <div><h3>Ubicación de APS</h3><p>Guatemala</p></div>
+                    <a href={googleMapsUrl} target="_blank" rel="noreferrer">Abrir en Google Maps <SiteIcon name="arrow" size={16} /></a>
+                  </div>
+                </div>
               </aside>
             </div>
           </div>
@@ -221,7 +246,7 @@ export default function Home() {
 
       <footer className="site-footer">
         <div className="shell footer-grid">
-          <div className="footer-brand"><Image src="/brand/aps-logo-horizontal.png" width={1600} height={305} alt="APS — Advanced Plumbing Systems" /><p>Tecnologías PEX y HDPE para proyectos modernos en Guatemala.</p></div>
+          <div className="footer-brand"><Image src="/brand/aps-logo-horizontal.png" width={1600} height={305} alt="APS — Advanced Plumbing Systems" /></div>
           <div><h3>Explorar</h3><a href="#acerca-de">Acerca de</a><a href="#productos">Productos</a><a href="#servicios">Servicios</a><a href="#proyectos">Proyectos</a></div>
           <div><h3>Contacto</h3><a href="tel:+50266766835">6676-6835</a><a href={whatsappUrl} target="_blank" rel="noreferrer">WhatsApp 4387-7424</a><a href="mailto:ventas@apspro.net">ventas@apspro.net</a></div>
         </div>

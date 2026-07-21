@@ -18,15 +18,6 @@ export function SiteHeader() {
 
   return (
     <header className="site-header">
-      <div className="utility-bar">
-        <div className="shell utility-inner">
-          <span>Soluciones PEX y HDPE en Guatemala</span>
-          <div>
-            <a href="tel:+50266766835">Tel. 6676-6835</a>
-            <a href="https://wa.me/50243877424" target="_blank" rel="noreferrer">WhatsApp 4387-7424</a>
-          </div>
-        </div>
-      </div>
       <div className="shell nav-wrap">
         <a className="brand" href="#inicio" aria-label="APS, ir al inicio">
           <Image className="brand-logo" src="/brand/aps-logo-header.png" width={1200} height={437} alt="APS — Advanced Plumbing Systems" priority />
